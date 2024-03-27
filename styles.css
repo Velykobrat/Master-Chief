@@ -1,6 +1,6 @@
 /* Загальні стилі */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -15,8 +15,10 @@ body {
 h1 {
     color: #333;
     font-size: 36px;
-    font-weight: bold;
     margin-top: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2 {
@@ -24,6 +26,17 @@ h2 {
     font-size: 24px;
     margin-top: 0;
 }
+
+p {
+    color: #666;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h1, h2, p {
+    font-weight: normal;      
+}
+
 /* Стилі для першого екрана */
 .first-screen {
     text-align: center;
@@ -146,3 +159,5 @@ footer p {
         font-size: 16px;
     }
 }
+
+
