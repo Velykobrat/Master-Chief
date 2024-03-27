@@ -49,14 +49,15 @@ p {
 }
 
 .first-screen h1 {
-    font-size: 36px;
+    font-size: 60px;
     font-weight: bold;
     margin-top: 0;
 }
 
 .first-screen h2 {
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 0;
+    margin-bottom: 60px;
 }
 
 .first-screen img {
@@ -65,15 +66,17 @@ p {
 }
 
 .first-screen p {
-    font-size: 18px;
+    font-size: 70px;
+    color: brown;
+    margin-top: 60px;
 }
 
 .first-screen button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 40px 80px;
+    font-size: 30px;
     cursor: pointer;
     border-radius: 5px;
 }
