@@ -14,8 +14,8 @@ body {
 
 /* Стилі для заголовків */
 h1 {
-    color: #333;
-    font-size: 36px;
+    color: #4D5AE5;
+    font-size: 30px;
     margin-top: 0;
     font-family: "Pacifico", cursive;
     font-weight: 400;
@@ -24,13 +24,13 @@ h1 {
 
 h2 {
     color: #666;
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 0;
 }
 
 p {
     color: #666;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 0;
 }
 
@@ -67,33 +67,33 @@ p {
 
 .first-screen p {
     font-size: 70px;
-    color: brown;
+    color: #666;
     margin-top: 60px;
 }
 
-.first-screen button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 40px 80px;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.first-screen button:hover {
-    background-color: #0056b3;
-}
 
 /* Стилі для кнопок */
 button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    font-size: 30px;
     cursor: pointer;
     border-radius: 5px;
+    color:#FFF;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+line-height: 20px; /* 150% */
+letter-spacing: 0.64px;
+background: #4D5AE5;
+padding: 16px 32px 16px 32px;
+background-color:#4D5AE5;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+min-width: 169px;
+height: 56px;
+border: none;
+margin: 0 auto;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover {
@@ -101,8 +101,12 @@ button:hover {
 }
 
 /* Стилі для форми */
-form {
-    margin-bottom: 20px;
+.order-form {
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.order-form form {
+    width: 100%; /* Збільшення ширини форми на весь доступний простір */
 }
 
 input[type="text"],
@@ -112,7 +116,9 @@ input[type="tel"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Завершальна ширина, що включає границі та внутрішні відступи */
 }
+
 
 /* Стилі для блоків */
 .first-screen,
@@ -164,44 +170,48 @@ footer p {
 }
 
 
-/* Стилі для блоків з перевагами */
+
+
+/* Стилі для блоку розв'язання проблем та переваг */
 .benefits ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 24px;
-
+    justify-content: center; /* Відцентровує елементи по ширині */
+    padding: 0;
+    list-style-type: none; /* Відміна маркерів списку */
 }
 
 .benefits li {
-    flex: 1 1 calc(50% - 10px);
-    margin-bottom: 20px;
-    background-color: #f8f9fa;
-    border-radius: 40px;
-    padding: 20px;
-    text-align: center; /* Відцентруємо текст */
-    
+    width: calc(50% - 20px); /* Розраховує ширину елементів з урахуванням маржинів */
+    margin: 10px; /* Маржини між елементами */
+    padding: 20px; /* Додатковий відступ всередині блоку */
+    background-color: #f8f9fa; /* Фоновий колір блоку */
+    border-radius: 10px; /* Закругленість кутів */
+    box-sizing: border-box; /* Завершальна ширина, що включає границі та внутрішні відступи */
+    text-align: center; /* Відцентрування тексту */
+}
+
+@media screen and (max-width: 768px) {
+    .benefits li {
+        width: calc(50% - 20px); /* На екранах ширше 768px розмір блоків буде 50% */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .benefits li {
+        width: calc(100% - 20px); /* На екранах ширше 550px розмір блоків буде 100% */
+    }
 }
 
 .benefits h3 {
-    margin-top: 0; /* Виправлення відступу у заголовків */
-    color: #333;
-    font-size: 28px;
     margin-top: 0;
+    font-size: 24px;
+    color: #4D5AE5;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
-
 }
 
-@media screen and (min-width: 768px) {
-    .benefits li {
-        flex: 1 1 calc(33.333% - 10px);
-    }
-}
 
 
 /* Стилі для блоків з фото та відео товару */
