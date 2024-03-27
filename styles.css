@@ -1,6 +1,7 @@
 /* Загальні стилі */
 body {
     font-family: 'Roboto', sans-serif;
+    color:#666;
     margin: 0;
     padding: 0;
 }
@@ -33,9 +34,8 @@ p {
     margin-top: 0;
 }
 
-h1, h2, p {
-    font-weight: normal;      
-}
+
+
 
 /* Стилі для першого екрана */
 .first-screen {
@@ -161,3 +161,60 @@ footer p {
 }
 
 
+/* Стилі для блоків з перевагами */
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.benefits li {
+    flex: 1 1 calc(50% - 10px);
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center; /* Відцентруємо текст */
+    
+}
+
+.benefits h3 {
+    margin-top: 0; /* Виправлення відступу у заголовків */
+    color: #333;
+    font-size: 28px;
+    margin-top: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@media screen and (min-width: 768px) {
+    .benefits li {
+        flex: 1 1 calc(33.333% - 10px);
+    }
+}
+
+
+/* Стилі для блоків з фото та відео товару */
+.media {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє перенесення елементів на новий рядок */
+}
+
+@media screen and (min-width: 768px) {
+    .media {
+        justify-content: space-between; /* Рівномірно розподіляє елементи по ширині контейнера */
+    }
+
+    .media img,
+    .media video {
+        width: calc(50% - 10px); /* Розраховує ширину елементів з урахуванням маргіну */
+        margin-bottom: 20px; /* Додатковий маржин між елементами */
+    }
+}
