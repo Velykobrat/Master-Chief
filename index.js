@@ -18,8 +18,8 @@ app.post('/submit-order', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'your-email@gmail.com', // Ваша електронна адреса Gmail
-                pass: 'your-password' // Ваш пароль від Gmail
+                user: 'master.chief.shop@gmail.com', // Ваша електронна адреса Gmail
+                pass: 'GHlk46(*&mn76' // Ваш пароль від Gmail
             }
         });
 
