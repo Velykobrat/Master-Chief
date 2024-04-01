@@ -135,7 +135,7 @@ font-weight: 500;
 line-height: 20px; /* 150% */
 letter-spacing: 0.64px;
 background: #4D5AE5;
-padding: auto;
+padding: 8px 16px 8px 16px;
 background-color:#4D5AE5;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 min-width: 169px;
