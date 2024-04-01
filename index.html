@@ -23,6 +23,19 @@
 
 
 <body>
+
+     <!-- Header розділ -->
+ <header class="page-header">
+    <div class="container">
+         <!-- Вміст з головного екрану -->
+    <h1>Mini printer</h1>
+    <a href="#order-section">
+        <button>Замовити зараз</button>
+    </a>
+    </div>
+</header>
+
+
     <!-- Перший екран -->
     <div class="container">
         <div class="first-screen">
@@ -85,11 +98,12 @@
         <div class="container order-section" id="order-section">
             <div class="order-form">
                 <h2>Замовити зараз</h2>
-                <form name="contact" method="POST" action="/thanks" data-netlify="true">
+                <form name="contact" method="POST" netlify data-netlify="true">
                     <input type="text" name="name" placeholder="Ім'я" required>
                     <input type="tel" name="phone" placeholder="Мобільний" required>
                     <button type="submit">Замовити</button>
-                </form>      
+                </form>
+                   
                   
                 
             </div>
@@ -129,7 +143,7 @@
     
 
 
-
+    
 
     <!-- Футер -->
     <div class="container">
