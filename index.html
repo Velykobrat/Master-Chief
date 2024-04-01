@@ -14,7 +14,7 @@
  <header class="page-header">
     <div class="container">
          <!-- Вміст з головного екрану -->
-    <h1>JETIX Mini printer</h1>
+    <h1>Mini printer</h1>
     <a href="#order-section">
         <button>Замовити зараз</button>
     </a>
@@ -26,28 +26,37 @@
     <!-- Перший екран -->
     <div class="container">
         <div class="first-screen">
-            <h2>Портативний термопринтер</h2>
+            <h2>ТЕРМОПРИНТЕР</h2>
             <img src="images/JETIX Mini Printer blue.jpg" alt="Товар">
-            <p>800 грн</p>
-
+            <div class="prices">
+                <div class="regular-price">
+                    <h3>Звичайна ціна</h3>
+                    <p><del>1200 грн</del></p>
+                </div>
+                <div class="discount-price">
+                    <h3>Акційна ціна</h3>
+                    <p>800 грн</p>
+                </div>
+            </div>
         </div>
     </div>
     
     <!-- Блок розв'язання проблем та переваг -->
     <div class="container">
         <div class="benefits">
+            <h1>Можливості</h1>
             <ul>
-                <li><h3>Термодрук без фарб:</h3> 
+                <li><h2>Термодрук без фарб:</h2> 
                     <p>Mini Printer використовує термодрук, що означає, що вам більше не потрібні фарби. Просто друкуйте на термопапері, і ваша інформація з'явиться миттєво.</p></li>
-                <li><h3>Прямий друк із смартфону:</h3> 
+                <li><h2>Прямий друк із смартфону:</h2> 
                     <p>Завдяки Bluetooth 4.0 ви можете надрукувати будь-який текст або зображення прямо зі свого смартфона через програму iPrint.</p></li>
-                <li><h3>Портативність та Автономність:</h3> 
+                <li><h2>Портативність / Автономність:</h2> 
                     <p>Мініатюрні розміри принтера та вбудований акумулятор ємністю 1000 мАг дозволяють вам брати його куди завгодно. Ваші творчі здібності тепер безмежні.</p></li>
-                <li><h3>Без проводів:</h3> 
+                <li><h2>Без проводів:</h2> 
                     <p>Жодних проводів та складних підключень. Просто увімкніть Bluetooth, відкрийте програму iPrint та починайте друкувати.</p></li>
-                <li><h3>Перегляд перед друком:</h3> 
+                <li><h2>Перегляд перед друком:</h2> 
                     <p>Зручно переглядайте вміст перед друком безпосередньо на екрані вашого смартфона.</p></li>
-                <li><h3>Історія друку:</h3> 
+                <li><h2>Історія друку:</h2> 
                     <p>Ваш Mini Printer зберігає історію всієї роздрукованої інформації, що зручно для подальшого використання.</p></li>
             </ul>
             
@@ -72,7 +81,31 @@
         </div>
     </div>
 
+        <!-- Форма для замовлення -->
+        <div class="container order-section" id="order-section">
+            <div class="order-form">
+                <h2>Замовити зараз</h2>
+                <form>
+                    <input type="text" placeholder="Ім'я" required>
+                    <input type="tel" placeholder="Мобільний" required>
+                    <button type="submit">Замовити</button>
+                </form>
+            </div>
+        </div>
 
+<!-- Схема замовлення -->
+<div class="container">
+    <div class="order-process">
+        <h2>Схема замовлення</h2>
+        <ol>
+            <li>Залиште заявку на сайті.</li>
+            <li>Наш менеджер зв'яжеться з вами протягом 15 хвилин.</li>
+            <li>Відправка відбувається виключно Новою поштою.Якщо заявку опрацьовано до 13:00, то відправка відбудеться у той самий день. Якщо після 13:00, то на наступний день.</li>
+        </ol>
+    </div>
+</div>
+    
+    
     <!-- Блок з характеристиками товару -->
     <div class="container">
         <div class="product-features">
@@ -92,25 +125,9 @@
         </div>
     </div>    
     
-    <!-- Схема замовлення -->
-    <div class="container">
-        <div class="order-process">
-            <h2>Схема замовлення</h2>
-            <p>Описуйте кроки від заявки до доставки</p>
-        </div>
-    </div>
 
-    <!-- Форма для замовлення -->
-    <div class="container order-section" id="order-section">
-        <div class="order-form">
-            <h2>Замовити зараз</h2>
-            <form>
-                <input type="text" placeholder="Ім'я" required>
-                <input type="tel" placeholder="Мобільний" required>
-                <button type="submit">Замовити</button>
-            </form>
-        </div>
-    </div>
+
+
 
     <!-- Футер -->
     <div class="container">
@@ -118,6 +135,14 @@
             <p>Copyright © by Velykobrat 2024</p>
         </footer>
     </div>
+
+
+
+
+     <!-- Скрипт для підключення вашого JavaScript файлу -->
+ <script src="index.js"></script>
+
+ 
 </body>
 </html>
 

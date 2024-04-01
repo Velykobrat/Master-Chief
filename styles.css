@@ -52,12 +52,24 @@ header {
     padding: 20px; /* Потрібний відступ від країв */
 }
 
+/* Стилі для h1 */
+.page-header h1 {
+    margin: 0; /* Видаляє зовнішній відступ у h1 */
+    padding: 0; /* Видаляє внутрішній відступ у h1 */
+    line-height: 1; /* Встановлює висоту рядка як 1, щоб відсутність додаткових проміжків */
+}
+
+/* Стилі для кнопки замовлення */
+.order-button {
+    margin-left: auto; /* Переміщує кнопку справа */
+    height: 100%; /* Встановлює висоту кнопки рівною висоті хедеру */
+}
 
 
 /* Стилі для першого екрана */
 .first-screen {
     text-align: center;
-    padding: 50px 0;
+    padding-top: 100px;
     background-image: #fff;
     border-radius: 20px;
     background-size: cover;
@@ -74,7 +86,7 @@ header {
 .first-screen h2 {
     font-size: 32px;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .first-screen img {
@@ -85,7 +97,27 @@ header {
 .first-screen p {
     font-size: 70px;
     color: #666;
-    margin-top: 60px;
+    margin-top: 15px;
+}
+
+/* Стилі для цін */
+.prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+.prices h3 {
+    font-size: 18px;
+    color: #4D5AE5;
+}
+
+.prices p {
+    font-size: 24px;
+}
+
+.prices del {
+    color: #999; /* Колір для перекресленого тексту */
 }
 
 
@@ -94,7 +126,7 @@ button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
     border-radius: 5px;
     color:#FFF;
@@ -103,11 +135,11 @@ font-weight: 500;
 line-height: 20px; /* 150% */
 letter-spacing: 0.64px;
 background: #4D5AE5;
-padding: 16px 32px 16px 32px;
+padding: 8px 16px 8px 16px;
 background-color:#4D5AE5;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 min-width: 169px;
-height: 56px;
+height: 36px;
 border: none;
 margin: 0 auto;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -190,6 +222,11 @@ footer p {
 
 
 /* Стилі для блоку розв'язання проблем та переваг */
+.benefits h1 {
+    text-align: center;
+}
+
+
 .benefits ul {
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +255,10 @@ footer p {
     .benefits li {
         width: calc(100% - 20px); /* На екранах ширше 550px розмір блоків буде 100% */
     }
+}
+
+.benefits li h2 {
+    font-size: 24px;
 }
 
 .benefits h3 {
