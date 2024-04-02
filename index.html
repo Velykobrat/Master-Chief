@@ -94,32 +94,29 @@
         </div>
     </div>
 
-        <!-- Форма для замовлення -->
-        <div class="container order-section" id="order-section">
-            <div class="order-form">
-                <h2>Замовити зараз</h2>
-                <form name="contact" method="POST" netlify data-netlify="true">
-                    <input type="text" name="name" placeholder="Ім'я" required>
-                    <input type="tel" name="phone" placeholder="Мобільний" required>
-                    <button type="submit">Замовити</button>
-                </form>
-                   
-                  
-                
-            </div>
+    <!-- Форма для замовлення -->
+    <div class="container order-section" id="order-section">
+        <div class="order-form">
+            <h2>Замовити зараз</h2>
+            <form name="contact" method="POST" netlify data-netlify="true">
+                <input type="text" name="name" placeholder="Ім'я" required>
+                <input type="tel" name="phone" placeholder="Мобільний (380)" pattern="[3][8]\d{10}" maxlength="12" title="Мобільний номер телефону повинен мати формат 38XXXXXXXXXX" required>
+                <button type="submit">Замовити</button>
+            </form>                
         </div>
+    </div>    
 
-<!-- Схема замовлення -->
-<div class="container">
-    <div class="order-process">
-        <h2>Схема замовлення</h2>
-        <ol>
-            <li>Залиште заявку на сайті.</li>
-            <li>Наш менеджер зв'яжеться з вами протягом 15 хвилин.</li>
-            <li>Відправка відбувається виключно Новою поштою. Товар по заявкам до 13:00 відправляється у той самий день. Якщо після 13:00, то на наступний день.</li>
-        </ol>
+    <!-- Схема замовлення -->
+    <div class="container">
+        <div class="order-process">
+            <h2>Схема замовлення</h2>
+            <ol>
+                <li>Залиште заявку на сайті.</li>
+                <li>Наш менеджер зв'яжеться з вами протягом 15 хвилин.</li>
+                <li>Відправка відбувається виключно Новою поштою. Товар по заявкам до 13:00 відправляється у той самий день. Якщо після 13:00, то на наступний день.</li>
+            </ol>
+        </div>
     </div>
-</div>
     
     
     <!-- Блок з характеристиками товару -->
