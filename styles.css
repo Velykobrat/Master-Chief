@@ -1,9 +1,10 @@
 /* Загальні стилі */
 body {
+    
     font-family: 'Roboto', sans-serif;
     color:#666;
     margin: 0;
-    padding: 0;
+    padding-top: 100px; /* Величина відступу, яку ви хочете залишити для заголовка */
 }
 
 .container {
@@ -69,7 +70,7 @@ header {
 /* Стилі для першого екрана */
 .first-screen {
     text-align: center;
-    padding-top: 100px;
+  
     background-image: #fff;
     border-radius: 20px;
     background-size: cover;
