@@ -150,10 +150,23 @@ button:hover {
 }
 
 /* Стилі для форми */
+
+.order-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Висота екрану */
+    margin-top: 10px; /* Простір над формою */
+
+}
 .order-form {
+    width: 80%; /* Ширина форми */
+    max-width: 400px; /* Максимальна ширина */
+    padding: 20px; /* Відступи */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 8px; /* Радіус кутів */
     text-align: center; /* Вирівнювання тексту по центру */
 }
-
 .order-form form {
     width: 100%; /* Збільшення ширини форми на весь доступний простір */
 }
