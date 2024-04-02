@@ -155,7 +155,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Висота екрану */
+    height: 40vh; /* Висота екрану */
     margin-top: 10px; /* Простір над формою */
 
 }
