@@ -21,7 +21,8 @@ The project presents the product, its key features and specifications, and provi
 - HTML5
 - CSS3
 - Responsive Design
-- Netlify Forms
+- Vercel Serverless Functions
+- Telegram Bot API
 - Google Fonts
 
 ## Project Goal
@@ -30,7 +31,7 @@ The goal of the project is to create a clean, modern and conversion-focused land
 
 ## Status
 
-The project is currently being prepared as a portfolio-ready commercial case.
+The project is a completed portfolio-ready commercial landing page with a functional order flow and Telegram notifications.
 
 ## Development
 
