@@ -39,7 +39,7 @@ No build process is required.
 Clone the repository and open `index.html` in a browser.
 
 ```bash
-git clone https://github.com/Velykobrat/Master-Chief.git
+git clone https://github.com/Velykobrat/mini-printer-landing.git
 ```
 
 ## Author
