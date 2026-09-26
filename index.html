@@ -10,7 +10,28 @@
       name="description"
       content="Компактний портативний термопринтер для друку фото, нотаток, списків і наліпок прямо зі смартфона."
     />
+<link rel="canonical" href="https://mini-printer-landing.vercel.app/" />
 
+<meta property="og:url" content="https://mini-printer-landing.vercel.app/" />
+
+<meta property="og:image" content="https://mini-printer-landing.vercel.app/images/mini-printer-blue.jpg" />
+
+<meta name="twitter:image" content="https://mini-printer-landing.vercel.app/images/mini-printer-blue.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:title" content="Mini Printer — портативний термопринтер" />
+    <meta property="og:description"
+      content="Компактний портативний термопринтер для фото, нотаток, списків і наліпок прямо зі смартфона." />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mini Printer — портативний термопринтер" />
+    <meta name="twitter:description"
+      content="Компактний портативний термопринтер для фото, нотаток, списків і наліпок прямо зі смартфона." />
+
+    <meta name="theme-color" content="#f7f7f5" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -81,10 +102,8 @@
             <div class="product-card">
               <span class="product-badge">−33%</span>
 
-              <img
-                src="./images/JETIX Mini Printer blue.jpg"
-                alt="Портативний термопринтер Mini Printer"
-              />
+              <img src="./images/mini-printer-blue.jpg" alt="Портативний термопринтер Mini Printer" decoding="async"
+                fetchpriority="high" />
             </div>
           </div>
 
@@ -176,13 +195,17 @@
 
           <div class="gallery">
             <img
-              src="./images/JETIX Mini Printer preprava.jpg"
+              src="./images/mini-printer-use.jpg"
               alt="Приклад використання Mini Printer"
+              loading="lazy"
+              decoding="async"
             />
 
             <img
-              src="./images/JETIX Mini Printer minion.jpg"
+              src="./images/mini-printer-minion.jpg"
               alt="Приклад друку Mini Printer"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
@@ -215,39 +238,31 @@
           </div>
 
           <div class="order-form">
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-
+            <form id="order-form">
+              <p class="honeypot" aria-hidden="true">
+                <label>
+                  Не заповнюйте це поле:
+                  <input type="text" name="bot-field" tabindex="-1" autocomplete="off" />
+                </label>
+              </p>
+            
               <label>
                 <span>Ваше ім'я</span>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Віталій"
-                  autocomplete="name"
-                  required
-                />
+                <input type="text" name="name" placeholder="Віталій" autocomplete="name" minlength="2" maxlength="60" required />
               </label>
-
+            
               <label>
                 <span>Номер телефону</span>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="+380"
-                  autocomplete="tel"
-                  required
-                />
+                <input type="tel" name="phone" placeholder="+380" autocomplete="tel" inputmode="tel" minlength="10" maxlength="19"
+                  required />
               </label>
-
+            
               <button class="button button--full" type="submit">
                 Замовити
               </button>
-
+            
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            
               <p class="form-note">
                 Після заявки менеджер зв'яжеться з вами для
                 підтвердження деталей.
@@ -345,5 +360,7 @@
       </div>
     </footer>
 
+    <script src="./script.js"></script>
+    
   </body>
 </html>
